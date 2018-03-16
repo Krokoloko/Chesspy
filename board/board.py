@@ -7,4 +7,15 @@ class Board:
         self.boardMatrix = [[0 for x in range(self.letters)]for y in range(self.numbers)]
 
     def PrintBoard(self):
-        print('\n\n'.join([boardRows[item].join(['{:4}'.format(item) for item in row])for row in self.boardMatrix]))
+        print(" ", end=" ")
+        for val in self.boardCols:
+            print(val, end=" ")
+        print("")
+
+        for row in self.boardMatrix:
+            for rval in self.boardRows:
+                print(rval, end=" ")
+                for val in row:
+                    print(val, end=" ")
+                print('')
+            break

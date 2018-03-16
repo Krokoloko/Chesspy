@@ -1,16 +1,16 @@
 import sys
 
-from board import board
-from piece import piece
+from board import Board
+from piece import Piece
 
-ChessBoard = board.Board()
+ChessBoard = Board.Board()
 
 def HelpMe():
     for i in funcList:
         print("\n" + funcList[i][2] + " : " + funcList[i][1])
 
 def NewGame():
-    return
+    pass
 
 def About():
     print("This is a chess game I am building so I can improve making AI's.\n\nMade by Daan Joachim Ruting")
@@ -39,5 +39,5 @@ funcList = {0:[HelpMe,"Shows all the functions and descriptions.","helpMe",None,
             2:[CloseApp,"Closes the application.","closeApp",None,"app"],
             3:[ChessBoard.PrintBoard,"Prints the current board layout.","printBoard",ChessBoard,"visual"]}
 
-if(__name__ == __main__):
-    Main()
+if(__name__ == '__main__'):
+    Main()   

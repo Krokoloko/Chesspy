@@ -1,1 +1,0 @@
-from knight import Knight

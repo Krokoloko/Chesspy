@@ -1,1 +1,1 @@
-from piece import piece
+from piece import Piece
